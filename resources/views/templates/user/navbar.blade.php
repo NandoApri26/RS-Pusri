@@ -1,6 +1,5 @@
-<nav class="w-full">
-    <div
-        class="px-8 py-4 gap-4 m-4 flex flex-wrap rounded-xl items-center justify-between bg-gray-200 sm:justify-center md:mx-12 xl:mx-20 2xl:mx-80 lg:justify-between"
+<nav class="w-full fixed bg-white shadow-[0px_2px_2px_0px_#00000024]">
+    <div class="px-8 py-4 gap-4 flex flex-wrap z-50 items-center justify-between sm:justify-center md:mx-12 xl:mx-20 2xl:mx-80 lg:justify-between "
         x-data="{ open: false }"
     >
         <div class="">

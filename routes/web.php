@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 
+use App\Http\Controllers\landingpageController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -20,3 +22,5 @@ Route::get('/', function () {
 Route::get('/used-component', function () {
     return view('used-component');
 });
+
+Route::get('/beranda', [landingpageController::class, 'index'])->name('beranda');

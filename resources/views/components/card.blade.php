@@ -1,5 +1,7 @@
 @props([
     'name' => '',
+    'styleName' => '',
+    'date' => Null,
     'unitSold' => Null,
     'unitReady' => Null,
     'title' => Null,
@@ -16,8 +18,9 @@
     <div class="px-8 space-y-8">
         <div class="space-y-2">
             <div class="">
-                <h1 class="text-2xl font-bold text-gray-900">{{ $name }}</h1>
+                <a href="" class="text-2xl font-bold text-gray-900 {{ $styleName }}">{{ $name }}</a>
             </div>
+            <div class="text-xs font-semibold">{{ $date }}</div>
             <div class="flex justify-between">
                 <div class="">
                     <h1 class="text-xl font-semibold text-gray-600">{{ $title }}</h1>
@@ -30,8 +33,10 @@
             </div>
             {{ $slot }}
         </div>
-        @if($button)
-            {{ $button }}
-        @endif
+        <div class="cursor-pointer bg-blue-600 py-2 rounded-full text-white text-center hover:bg-blue-500">
+            @if($button)
+                <a href="">{{ $button }}</a>
+            @endif
+        </div>
     </div>
 </div>

@@ -3,13 +3,17 @@
 <head>
     @include('templates.user.header')
 </head>
-<body>
+<body class="bg-gray-100">
 
     <div class="">
         @include('templates.user.navbar')
     </div>
 
     @yield('content')
+
+    <div class="mt-36">
+        @include('templates.user.footer')
+    </div>
 
     {{-- Livewire Script --}}
     @livewireScripts

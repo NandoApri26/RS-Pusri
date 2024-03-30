@@ -9,7 +9,7 @@
     'button' => Null,
 ])
 <div {{ $attributes->merge([
-        'class' => 'w-96 space-y-4 bg-white shadow-lg pb-8 rounded-xl'
+        'class' => 'space-y-4 bg-white shadow-lg pb-8 rounded-xl'
     ])
 }}>
     <div class="">

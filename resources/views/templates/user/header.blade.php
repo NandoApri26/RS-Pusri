@@ -10,5 +10,8 @@
     {{-- Tailwind Css --}}
     @vite('resources/css/app.css')
 
+    {{-- Flowbite --}}
+    @vite(['resources/css/app.css','resources/js/app.js'])
+
     <title>@yield('title')</title>
 </head>

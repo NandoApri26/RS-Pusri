@@ -1,4 +1,4 @@
-<footer class="bg-white pt-10 pb-4 shadow-[rgba(17,_17,_26,_0.1)_0px_0px_16px]">
+<footer class="bg-white pt-10 pb-8 shadow-[rgba(17,_17,_26,_0.1)_0px_0px_16px]">
     <div class="flex flex-col px-8 gap-4 md:flex-row md:mx-12 xl:mx-20 2xl:mx-80">
         <div class="flex w-full justify-between md:justify-around">
             <div class="space-y-8">

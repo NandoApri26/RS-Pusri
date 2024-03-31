@@ -4,7 +4,7 @@
     >
         <div class="flex w-full lg:w-auto justify-between sm:justify-center">
             <div class="">
-                <a href="">
+                <a href="{{ url('/beranda') }}">
                     <img src="{{ asset('/assets/logo.png') }}" alt="Logo RS Pusri" class="w-64 sm:w-80">
                 </a>
             </div>
@@ -24,12 +24,12 @@
             <div class="w-full xl:w-auto">
                 <ul class="flex flex-col sm:flex-row items-center w-full justify-center gap-2 py-8 sm:py-0">
                     <li class="w-full sm:w-auto bg-sky-500 px-6 py-2 sm:px-4 rounded-md text-center font-semibold text-white">
-                        <a href="" class="">
+                        <a href="{{ url('/beranda') }}" class="">
                             BERANDA
                         </a>
                     </li>
                     <li x-data="{ open: false }" class="relative">
-                        <button class="flex items-center gap-4 cursor-pointer w-full justify-between sm:w-auto px-6 py-2 sm:px-4 rounded-md    font-semibold text-sky-500 text-center hover:bg-sky-500 hover:text-white group"
+                        <button class="flex items-center gap-2 cursor-pointer w-full justify-between sm:w-auto px-6 py-2 sm:px-4 rounded-md    font-semibold text-sky-500 text-center hover:bg-sky-500 hover:text-white group"
                             x-on:click="open = ! open"
                         >
                             TENTANG KAMI
@@ -42,19 +42,23 @@
                             :class="{ 'hidden': ! open }"
                         >
                             <ul class="py-2 text-sm text-gray-600">
-                                <a href="">
-                                    <li class="block px-4 py-2 hover:bg-sky-500 hover:text-white">
+                                <a href="#profile">
+                                    <li class="block text-gray-600 text-sky-500 font-semibold px-4 py-2 hover:bg-sky-500 hover:text-white">
                                         PROFILE
                                     </li>
                                 </a>
-                                <li class="block px-4 py-2 hover:bg-sky-500 hover:text-white">
-                                    <a href="">VISI MISI</a>
-                                </li>
-                                <li class="block px-4 py-2 hover:bg-sky-500 hover:text-white">
-                                    <a href="">PEMEGANG SAHAM</a>
-                                </li>
-                                <li class="block px-4 py-2 hover:bg-sky-500 hover:text-white">
-                                    <a href="">STRUKTUR</a>
+                                <a href="#visi-misi">
+                                    <li class="block text-gray-600 text-sky-500 font-semibold px-4 py-2 hover:bg-sky-500 hover:text-white">
+                                        VISI MISI
+                                    </li>
+                                </a>
+                                <a href="#pemegang-saham">
+                                    <li class="block text-gray-600 text-sky-500 font-semibold px-4 py-2 hover:bg-sky-500 hover:text-white">
+                                        PEMEGANG SAHAM
+                                    </li>
+                                </a>
+                                <li class="block text-gray-600 text-sky-500 font-semibold px-4 py-2 hover:bg-sky-500 hover:text-white">
+                                    <a href="#struktur">STRUKTUR</a>
                                 </li>
                             </ul>
                         </div>

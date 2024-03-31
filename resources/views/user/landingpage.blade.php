@@ -4,18 +4,18 @@
 
 @section('content')
 
-    <div class="px-4 pt-24 sm:px-0 sm:pt-0">
+    <div class="px-8 pt-24 sm:px-0 sm:pt-0">
         {{-- Hero Content --}}
         <div class="">
             <img src="{{ asset('assets/image1.jpeg') }}" alt="" class="object-cover w-full rounded-xl sm:rounded-none">
         </div>
     </div>
 
-    <div class="pt-10 px-4 space-y-10 sm:mx-12 sm:pt-20 xl:mx-20 2xl:mx-80">
+    <div class="pt-10 px-8 space-y-10 sm:mx-12 sm:pt-20 xl:mx-20 2xl:mx-80">
         {{-- Pelayanan --}}
         <div class="bg-white shadow-xl py-8 px-4 xl:py-10 rounded-xl">
             <div class="flex justify-center">
-                <h1 class="text-xl text-gray-900 font-bold pb-2 border-b border-gray-600">PELAYANAN</h1>
+                <h1 class="text-xl text-gray-900 font-bold pb-1 border-b border-sky-600">PELAYANAN</h1>
             </div>
             <div class="flex flex-wrap gap-5 lg:space-y-8 mt-10 justify-center">
                 <div class="flex w-full lg:w-1/2 justify-center">
@@ -94,12 +94,12 @@
         </div>
 
         {{-- Berita --}}
-        <div class="pt-10 space-y-10 sm:pt-10">
+        <div class="pt-10 space-y-10">
             <div class="flex justify-center">
-                <h1 class="text-xl text-gray-900 font-bold pb-2 border-b border-gray-600">BERITA</h1>
+                <h1 class="text-xl text-gray-900 font-bold pb-1 border-b border-sky-600">BERITA</h1>
             </div>
             <div class="w-full overflow-x-auto mt-10 pb-8 2xl:justify-center flex">
-                <div class="w-[1500px] lg:w-[1760px] lg:gap-12 flex gap-6">
+                <div class="w-[1760px] flex gap-6">
                     @for ($i = 0; $i < 6; $i++)
                         <x-card
                             class="w-96"

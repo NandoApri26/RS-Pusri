@@ -2,6 +2,8 @@
 <html lang="en">
 <head>
     @include('templates.user.header')
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
 </head>
 <body class="bg-gray-100">
 

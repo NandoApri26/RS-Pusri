@@ -42,7 +42,7 @@
                             :class="{ 'hidden': ! open }"
                         >
                             <ul class="py-2 text-sm text-gray-600">
-                                <a href="#profile">
+                                <a href="{{ url('/tentang-kami/#profile') }}">
                                     <li class="block text-gray-600 text-sky-500 font-semibold px-4 py-2 hover:bg-sky-500 hover:text-white">
                                         PROFILE
                                     </li>

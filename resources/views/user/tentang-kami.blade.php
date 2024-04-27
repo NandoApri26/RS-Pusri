@@ -147,7 +147,7 @@
         </div>
 
         <!-- PEMEGANG SAHAM -->
-        <div class="py-10 space-y-10">
+        <div id="pemegang-saham" class="py-10 space-y-10">
             <div class="flex justify-center">
                 <h1 class="text-2xl text-gray-900 font-bold pb-1 border-b-4 border-sky-600">PEMEGANG SAHAM</h1>
             </div>

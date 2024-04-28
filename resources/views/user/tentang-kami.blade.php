@@ -189,13 +189,19 @@
                 <h1 class="text-2xl text-gray-600 font-bold pb-1 border-b-4 border-sky-600">STRUKTUR ORGANISASI</h1>
             </div>
             <div class="px-10">
-                <div class="flex gap-4 items-center cursor-pointer justify-center pb-20">
-                    <a href="#dewanKomisaris" class="px-6 py-2 text-lg text-gray-600 font-semibold bg-sky-600 text-white rounded-md">DEWAN KOMISARIS</a>
-                    <svg width="3" height="20" viewBox="0 0 2 14" fill="none">
-                        <path d="M1 12.8333V1.16667" stroke="#4B5563" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                    <a href="#direksi" class="px-6 py-2 text-lg text-gray-600 font-semibold">DIREKSI</a>
-                </div>
+                <x-tab>
+                    <x-tab-link
+                        pathName="KOMISARIS"
+                        link="#dewanKomisaris"
+                    >
+                        <svg width="3" height="20" viewBox="0 0 2 14" fill="none">
+                            <path d="M1 12.8333V1.16667" stroke="#4B5563" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </x-tab-link>
+                    <x-tab-link
+                        pathName="DIREKSI"
+                    />
+                </x-tab>
                 <div class="border-l-4 border-sky-600">
                     <h1 class="px-10 text-gray-600 text-5xl">Dewan Komisaris</h1>
                 </div>

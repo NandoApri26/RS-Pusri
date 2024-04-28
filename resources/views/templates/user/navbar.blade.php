@@ -1,4 +1,4 @@
-<nav class="w-full fixed bg-white shadow-[0px_2px_2px_0px_#00000024]">
+<nav class="w-full fixed bg-white shadow-[0px_2px_2px_0px_#00000024] z-50">
     <div class="px-8 lg:h-20 py-4 gap-4 flex flex-col lg:flex-row items-center justify-between sm:justify-center md:mx-12 xl:mx-20 2xl:mx-80 lg:justify-between "
         x-data="{ open: false }"
     >
@@ -81,7 +81,7 @@
                             :class="{ 'hidden': ! open }"
                         >
                             <ul class="py-2 text-sm text-gray-600">
-                                <a href="#profile">
+                                <a href="{{ url('/layanan') }}">
                                     <li class="block text-gray-600 text-sky-500 font-semibold px-4 py-2 hover:bg-sky-500 hover:text-white">
                                         JADWAL
                                     </li>

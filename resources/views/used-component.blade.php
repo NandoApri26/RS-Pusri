@@ -45,6 +45,22 @@
                     @endfor
                 </x-card>
             </div>
+            <div class="pt-12">
+                <h1 class="font-bold text-2xl text-center my-4">Table</h1>
+                <table class="w-full bg-sky-600 text-whites">
+                    <thead>
+                        <tr>
+                            <th>Hari</th>
+                            <th>Nama</th>
+                            <th>Jam Mulai</th>
+                            <th>Jam Selesai</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <td></td>
+                    </tbody>
+                </table>
+            </div>
         </div>
     </div>
 

@@ -5,6 +5,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\landingpageController;
 use App\Http\Controllers\tentangkamiController;
 use App\Http\Controllers\jadwalController;
+use App\Http\Controllers\layananController;
 
 /*
 |--------------------------------------------------------------------------
@@ -28,4 +29,6 @@ Route::get('/used-component', function () {
 Route::get('/beranda', [landingpageController::class, 'index'])->name('beranda');
 Route::get('/tentang-kami', [tentangkamiController::class, 'index'])->name('tentang-kami');
 
-Route::get('/layanan', [jadwalController::class, 'index'])->name('layanan');
+Route::get('/layanan', [layananController::class, 'jadwal'])->name('jadwal');
+Route::get('/rawat-jalan', [layananController::class, 'rawatJalan'])->name('rawat-jalan');
+Route::get('/rawat-inap', [layananController::class, 'rawatInap'])->name('rawat-inap');

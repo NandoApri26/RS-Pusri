@@ -102,11 +102,11 @@
                 <div class="w-[1760px] flex gap-6">
                     @for ($i = 0; $i < 6; $i++)
                         <x-card
+                            imgFile="{{ asset('assets/Hemodialisis.jpg') }}"
                             class="w-96"
                             name="PEMERIKSAAN USG DAN KONSULTASI GRATIS BULAN JUNI"
                             date="29 Maret 2024"
-                            unitSold="ULAN JUNI PENUH PROMO! Hai Bumils, ada promo istimewa untuk para bumil nih. Pemeriksaan USG gratis selamat bulan Juni 2022. Catat tempat dan tanggalnya ya..."
-                            button="Lihat Selengkapnya"
+                            unitSold="Layanan Hemodialisis ini dapat membantu bagi yang mengalami Gagal Ginjal dan memerlukan tindakan cuci darah secara periodik. Ditangani oleh dokter spesialis Ginjal dan tenaga paramedis yang ahli di bidangnya."
                         />
                     @endfor
                 </div>

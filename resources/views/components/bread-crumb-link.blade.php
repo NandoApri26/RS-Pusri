@@ -1,5 +1,7 @@
 @props([
     'pathName' => Null,
+    'link' => Null,
+    'classStyle' => '',
 ])
 
 <div class="">
@@ -14,6 +16,6 @@
                 </clipPath>
             </defs>
         </svg>
-        <a href="" class="text-xl font-semibold px-4 py-1 bg-sky-500 text-white rounded-md">{{ $pathName }}</a>
+        <a href="{{ $link }}" class="text-xl font-semibold px-4 py-1 bg-sky-500 text-white rounded-md {{ $classStyle }}">{{ $pathName }}</a>
     </div>
 </div>

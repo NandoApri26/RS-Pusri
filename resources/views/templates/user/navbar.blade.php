@@ -86,12 +86,12 @@
                                         JADWAL
                                     </li>
                                 </a>
-                                <a href="#visi-misi">
+                                <a href="{{ url('/rawat-jalan') }}">
                                     <li class="block text-gray-600 text-sky-500 font-semibold px-4 py-2 hover:bg-sky-500 hover:text-white">
                                         RAWAT JALAN
                                     </li>
                                 </a>
-                                <a href="#pemegang-saham">
+                                <a href="{{ url('/rawat-inap') }}">
                                     <li class="block text-gray-600 text-sky-500 font-semibold px-4 py-2 hover:bg-sky-500 hover:text-white">
                                         RAWAT INAP
                                     </li>

@@ -32,3 +32,4 @@ Route::get('/tentang-kami', [tentangkamiController::class, 'index'])->name('tent
 Route::get('/layanan', [layananController::class, 'jadwal'])->name('jadwal');
 Route::get('/rawat-jalan', [layananController::class, 'rawatJalan'])->name('rawat-jalan');
 Route::get('/rawat-inap', [layananController::class, 'rawatInap'])->name('rawat-inap');
+Route::get('/detail-ruangan', [layananController::class, 'detailRuangan'])->name('detail-ruangan');

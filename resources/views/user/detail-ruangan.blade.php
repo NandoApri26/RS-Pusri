@@ -9,7 +9,7 @@
             <x-bread-crumb-link
                 pathName="Ruangan"
                 classStyle="!bg-transparent !text-gray-600"
-                link="{{ url('/rawat-inap') }}"
+                link="{{ route('rawat-inap') }}"
             />
             <x-bread-crumb-link
                 pathName="Detail Ruangan"

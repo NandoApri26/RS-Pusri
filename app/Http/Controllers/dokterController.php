@@ -10,4 +10,9 @@ class dokterController extends Controller
     {
         return view('user.dokter');
     }
+
+    public function detail()
+    {
+        return view('user.detail-dokter');
+    }
 }

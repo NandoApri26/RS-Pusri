@@ -39,3 +39,4 @@ Route::prefix('/layanan')->group(function () {
 
 // Doketer
 Route::get('/dokter', [dokterController::class, 'index'])->name('dokter');
+Route::get('/detail-dokter', [dokterController::class, 'detail'])->name('detail-dokter');

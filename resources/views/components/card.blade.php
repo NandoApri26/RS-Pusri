@@ -1,6 +1,7 @@
 @props([
     'name' => '',
     'styleName' => '',
+    'imgStyle' => '',
     'date' => Null,
     'unitSold' => Null,
     'unitReady' => Null,
@@ -8,7 +9,6 @@
     'title2' => Null,
     'button' => Null,
     'imgFile' => Null,
-    'imgStyle' => '',
     'linkButton' => Null,
 
 //    'buttonStyle' => 'cursor-pointer bg-blue-600 py-2 rounded-full text-white text-center hover:bg-blue-500',
@@ -18,7 +18,7 @@
     ])
 }}>
     <div class="">
-        <img src="{{ $imgFile }}" class="object-cover rounded-t-xl w-full h-60 {{ $imgStyle }}">
+        <img src="{{ $imgFile }}" class="object-cover rounded-t-xl w-full {{ $imgStyle }}">
     </div>
     <div class="px-12 py-5 space-y-8">
         <div class="space-y-2">

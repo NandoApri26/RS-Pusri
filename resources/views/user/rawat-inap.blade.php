@@ -28,7 +28,7 @@
                 title2="Ruangan Tersedia"
                 unitReady="5 Unit"
                 button="Lihat Detail"
-                linkButton="{{ url('/detail-ruangan') }}"
+                linkButton="{{ route('detail-ruangan') }}"
             >
                 <div class="flex flex-col space-y-1">
                     <div class="flex items-center gap-4">
@@ -72,7 +72,7 @@
                 title2="Ruangan Tersedia"
                 unitReady="5 Unit"
                 button="Lihat Detail"
-                linkButton="{{ url('/detail-ruangan') }}"
+                linkButton="{{ route('detail-ruangan') }}"
             >
                 <div class="flex flex-col space-y-1">
                     <div class="flex items-center gap-4">
@@ -116,7 +116,7 @@
                 title2="Ruangan Tersedia"
                 unitReady="5 Unit"
                 button="Lihat Detail"
-                linkButton="{{ url('/detail-ruangan') }}"
+                linkButton="{{ route('detail-ruangan') }}"
             >
                 <div class="flex flex-col space-y-1">
                     <div class="flex items-center gap-4">
@@ -163,7 +163,7 @@
                 title2="Ruangan Tersedia"
                 unitReady="5 Unit"
                 button="Lihat Detail"
-                linkButton="{{ url('/detail-ruangan') }}"
+                linkButton="{{ route('detail-ruangan') }}"
             >
                 <div class="flex flex-col space-y-1">
                     <div class="flex items-center gap-4">
@@ -207,7 +207,7 @@
                 title2="Ruangan Tersedia"
                 unitReady="5 Unit"
                 button="Lihat Detail"
-                linkButton="{{ url('/detail-ruangan') }}"
+                linkButton="{{ route('detail-ruangan') }}"
             >
                 <div class="flex flex-col space-y-1">
                     <div class="flex items-center gap-4">
@@ -251,7 +251,7 @@
                 title2="Ruangan Tersedia"
                 unitReady="5 Unit"
                 button="Lihat Detail"
-                linkButton="{{ url('/detail-ruangan') }}"
+                linkButton="{{ route('detail-ruangan') }}"
             >
                 <div class="flex flex-col space-y-1">
                     <div class="flex items-center gap-4">

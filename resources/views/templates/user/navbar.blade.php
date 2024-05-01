@@ -4,7 +4,7 @@
     >
         <div class="flex w-full lg:w-auto justify-between sm:justify-center">
             <div class="">
-                <a href="{{ url('/beranda') }}">
+                <a href="{{ route ('beranda') }}">
                     <img src="{{ asset('/assets/logo.png') }}" alt="Logo RS Pusri" class="w-64 sm:w-80">
                 </a>
             </div>
@@ -23,13 +23,16 @@
         <div class="hidden sm:block mx-auto lg:mx-0" :class="{ 'hidden': ! open }">
             <div class="w-full xl:w-auto">
                 <ul class="flex flex-col sm:flex-row items-center w-full justify-center gap-2 py-8 sm:py-0">
-                    <li class="w-full sm:w-auto bg-sky-500 px-6 py-2 sm:px-4 rounded-md text-center font-semibold text-white">
-                        <a href="{{ url('/beranda') }}" class="">
+                    <li class="w-full sm:w-auto px-6 py-2 sm:px-4 rounded-md text-center font-semibold text-sky-500 hover:bg-sky-500 hover:text-white
+                        @if(Request::segment(1) == 'beranda') bg-sky-500 text-white @endif"
+                    >
+                        <a href="{{ route('beranda') }}" class="">
                             BERANDA
                         </a>
                     </li>
                     <li x-data="{ open: false }" class="relative">
-                        <button class="flex items-center gap-2 cursor-pointer w-full justify-between sm:w-auto px-6 py-2 sm:px-4 rounded-md    font-semibold text-sky-500 text-center hover:bg-sky-500 hover:text-white group"
+                        <button class="flex items-center gap-2 cursor-pointer w-full justify-between sm:w-auto px-6 py-2 sm:px-4 rounded-md   font-semibold text-sky-500 text-center hover:bg-sky-500 hover:text-white group
+                        @if(Request::segment(1) == 'tentang-kami') bg-sky-500 text-white @endif"
                             x-on:click="open = ! open"
                         >
                             TENTANG KAMI
@@ -42,7 +45,7 @@
                             :class="{ 'hidden': ! open }"
                         >
                             <ul class="py-2 text-sm text-gray-600">
-                                <a href="{{ url('/tentang-kami/#profile') }}">
+                                <a href="{{ route('tentang-kami') }}/#profile">
                                     <li class="block text-gray-600 text-sky-500 font-semibold px-4 py-2 hover:bg-sky-500 hover:text-white">
                                         PROFILE
                                     </li>
@@ -68,8 +71,9 @@
                     <li x-data="{ open: false }"
                         class="relative"
                     >
-                        <button class="flex items-center gap-2 cursor-pointer w-full justify-between sm:w-auto px-6 py-2 sm:px-4 rounded-md    font-semibold text-sky-500 text-center hover:bg-sky-500 hover:text-white group"
-                                x-on:click="open = ! open"
+                        <button class="flex items-center gap-2 cursor-pointer w-full justify-between sm:w-auto px-6 py-2 sm:px-4 rounded-md    font-semibold text-sky-500 text-center hover:bg-sky-500 hover:text-white group
+                        @if(Request::segment(1) == 'layanan') bg-sky-500 text-white @endif"
+                            x-on:click="open = ! open"
                         >
                             LAYANAN
                             <svg class="w-3 h-3 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
@@ -81,17 +85,17 @@
                             :class="{ 'hidden': ! open }"
                         >
                             <ul class="py-2 text-sm text-gray-600">
-                                <a href="{{ url('/layanan') }}">
+                                <a href="{{ route('jadwal')  }}">
                                     <li class="block text-gray-600 text-sky-500 font-semibold px-4 py-2 hover:bg-sky-500 hover:text-white">
                                         JADWAL
                                     </li>
                                 </a>
-                                <a href="{{ url('/rawat-jalan') }}">
+                                <a href="{{ route('rawat-jalan') }}">
                                     <li class="block text-gray-600 text-sky-500 font-semibold px-4 py-2 hover:bg-sky-500 hover:text-white">
                                         RAWAT JALAN
                                     </li>
                                 </a>
-                                <a href="{{ url('/rawat-inap') }}">
+                                <a href="{{ route('rawat-inap') }}">
                                     <li class="block text-gray-600 text-sky-500 font-semibold px-4 py-2 hover:bg-sky-500 hover:text-white">
                                         RAWAT INAP
                                     </li>
@@ -99,12 +103,16 @@
                             </ul>
                         </div>
                     </li>
-                    <li class="w-full sm:w-auto px-6 py-2 sm:px-4 rounded-md font-semibold text-sky-500 text-center hover:bg-sky-500 hover:text-white">
+                    <li class="w-full sm:w-auto px-6 py-2 sm:px-4 rounded-md font-semibold text-sky-500 text-center hover:bg-sky-500 hover:text-white
+
+                    ">
                         <a href="">
                             DOKTER
                         </a>
                     </li>
-                    <li class="w-full sm:w-auto px-6 py-2 sm:px-4 rounded-md font-semibold text-sky-500 text-center hover:bg-sky-500 hover:text-white">
+                    <li class="w-full sm:w-auto px-6 py-2 sm:px-4 rounded-md font-semibold text-sky-500 text-center hover:bg-sky-500 hover:text-white
+
+                    ">
                         <a href="">
                             INFORMASI
                         </a>

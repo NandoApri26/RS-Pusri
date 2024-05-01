@@ -104,9 +104,9 @@
                         </div>
                     </li>
                     <li class="w-full sm:w-auto px-6 py-2 sm:px-4 rounded-md font-semibold text-sky-500 text-center hover:bg-sky-500 hover:text-white
-
+                    @if(Request::segment(1) == 'dokter') bg-sky-500 text-white @endif
                     ">
-                        <a href="">
+                        <a href="{{ route('dokter') }}">
                             DOKTER
                         </a>
                     </li>

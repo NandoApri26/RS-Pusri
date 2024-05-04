@@ -6,7 +6,7 @@
 <div
     {{
         $attributes->merge([
-            'class' => 'relative overflow-x-auto rounded-xl shadow-lg'
+            'class' => 'text-left rounded-lg shadow-lg'
         ])
     }}
 >

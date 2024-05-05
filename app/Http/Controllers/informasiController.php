@@ -15,4 +15,9 @@ class informasiController extends Controller
     {
         return view('user.detail-berita');
     }
+
+    public function galeri()
+    {
+        return view('user.galeri');
+    }
 }

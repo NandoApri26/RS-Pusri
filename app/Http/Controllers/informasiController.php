@@ -11,5 +11,8 @@ class informasiController extends Controller
         return view('user.berita');
     }
 
-
+    public function detailBerita()
+    {
+        return view('user.detail-berita');
+    }
 }

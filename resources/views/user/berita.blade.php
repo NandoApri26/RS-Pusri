@@ -12,8 +12,13 @@
         </x-bread-crumb>
     </div>
 
-    <!-- Tab -->
-    <div class="px-8 pt-24 space-y-10 sm:px-14 sm:pt-40 lg:pt-20 lg:px-28">
+    <div class="pt-10">
+        <x-tittle
+            title="Berita"
+    />
+
+        <!-- Tab -->
+    <div class="px-8 pt-24 space-y-10 sm:px-14 sm:pt-40 lg:pt-10 lg:px-28">
         <div class="w-full overflow-x-auto mt-10 pb-8 2xl:justify-center flex">
             <div class="w-[1760px] flex flex-wrap gap-6">
                 @for ($i = 0; $i < 8; $i++)

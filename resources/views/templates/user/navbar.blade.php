@@ -24,7 +24,7 @@
             <div class="w-full xl:w-auto">
                 <ul class="flex flex-col sm:flex-row items-center w-full justify-center gap-2 py-8 sm:py-0">
                     <li class="w-full sm:w-auto px-6 py-2 sm:px-4 rounded-md text-center font-semibold text-sky-500 hover:bg-sky-500 hover:text-white
-                        @if(Request::segment(1) == 'beranda') bg-sky-500 text-white @endif"
+                        @if(Request::segment(1) == '') bg-sky-500 text-white @endif"
                     >
                         <a href="{{ route('beranda') }}" class="">
                             BERANDA
@@ -113,7 +113,7 @@
                     <li x-data="{ open: false }"
                         class="relative"
                     >
-                        <button class="flex items-center gap-1 cursor-pointer w-full justify-between sm:w-auto px-6 py-2 sm:px-4 rounded-md    font-semibold text-sky-500 text-center hover:bg-sky-500 hover:text-white group
+                        <button class="flex items-center gap-1 cursor-pointer w-full justify-between sm:w-auto px-6 py-2 sm:px-4 rounded-md font-semibold text-sky-500 text-center hover:bg-sky-500 hover:text-white group
                         @if(Request::segment(1) == 'informasi') bg-sky-500 text-white @endif"
                                 x-on:click="open = ! open"
                         >
@@ -140,8 +140,8 @@
                             </ul>
                         </div>
                     </li>
-                    <li class="w-full sm:w-auto px-6 py-2 sm:px-4 rounded-md font-semibold text-sky-500 text-center hover:bg-sky-500 hover:text-white">
-                        <a href="">
+                    <li class="w-full sm:w-auto px-6 py-2 sm:px-4 rounded-md font-semibold text-sky-500 text-center hover:bg-sky-500 hover:text-white @if(Request::segment(1) == 'kontak') bg-sky-500 text-white @endif">
+                        <a href="{{ route('kontak') }}">
                             KONTAK
                         </a>
                     </li>

@@ -25,6 +25,7 @@
                 <ul class="flex flex-col sm:flex-row items-center w-full justify-center gap-2 py-8 sm:py-0">
                     <li class="w-full sm:w-auto px-6 py-2 sm:px-4 rounded-md text-center font-semibold text-sky-500 hover:bg-sky-500 hover:text-white
                         @if(Request::segment(1) == 'beranda') bg-sky-500 text-white @endif"
+                        @if(Request::segment(1) == ' ') bg-sky-500 text-white @endif"
                     >
                         <a href="{{ route('beranda') }}" class="">
                             BERANDA
@@ -50,17 +51,17 @@
                                         PROFILE
                                     </li>
                                 </a>
-                                <a href="#visi-misi">
+                                <a href="{{ route('tentang-kami') }}/#visi-misi">
                                     <li class="block text-gray-600 text-sky-500 font-semibold px-4 py-2 hover:bg-sky-500 hover:text-white">
                                         VISI MISI
                                     </li>
                                 </a>
-                                <a href="#pemegang-saham">
+                                <a href="{{ route('tentang-kami') }}#pemegang-saham">
                                     <li class="block text-gray-600 text-sky-500 font-semibold px-4 py-2 hover:bg-sky-500 hover:text-white">
                                         PEMEGANG SAHAM
                                     </li>
                                 </a>
-                                <a href="#struktur">
+                                <a href="{{ route('tentang-kami') }}#struktur">
                                     <li class="block text-gray-600 text-sky-500 font-semibold px-4 py-2 hover:bg-sky-500 hover:text-white">
                                         STRUKTUR
                                     </li>

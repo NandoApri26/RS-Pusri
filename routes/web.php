@@ -7,6 +7,7 @@ use App\Http\Controllers\tentangkamiController;
 use App\Http\Controllers\dokterController;
 use App\Http\Controllers\layananController;
 use App\Http\Controllers\informasiController;
+use App\Http\Controllers\kontakController;
 
 /*
 |--------------------------------------------------------------------------
@@ -48,3 +49,9 @@ Route::prefix('/informasi')->group(function () {
     Route::get('/detail-berita', [informasiController::class, 'detailBerita'])->name('detail-berita');
     Route::get('/galeri', [informasiController::class, 'galeri'])->name('galeri');
 });
+
+// Kontak
+Route::prefix('/kontak')->group(function () {
+    Route::get('', [kontakController::class, 'index'])->name('kontak');
+});
+

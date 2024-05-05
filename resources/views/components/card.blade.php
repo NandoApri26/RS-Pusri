@@ -23,9 +23,9 @@
     <div class="px-12 py-5 space-y-8">
         <div class="space-y-2">
             <div class="">
-                <a href="" class="text-2xl font-bold text-gray-900 {{ $styleName }}">{{ $name }}</a>
+                <a href="" class="text-xl font-bold text-gray-900 {{ $styleName }}">{{ $name }}</a>
             </div>
-            <div class="text-xs font-semibold">{{ $date }}</div>
+            <div class="text-sm font-semibold">{{ $date }}</div>
             <div class="flex justify-between gap-10">
                 <div class="">
                     <h1 class="text-xl font-semibold text-gray-600">{{ $title }}</h1>
@@ -39,7 +39,7 @@
             {{ $slot }}
         </div>
         @if($button)
-            <div class="cursor-pointer bg-blue-600 py-2 rounded-full text-white text-center hover:bg-blue-500">
+            <div class="cursor-pointer bg-sky-500 py-2 rounded-full text-white text-center hover:bg-sky-600">
                 <a href="{{ $linkButton }}">{{ $button }}</a>
             </div>
         @endif

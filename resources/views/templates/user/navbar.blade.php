@@ -31,7 +31,7 @@
                         </a>
                     </li>
                     <li x-data="{ open: false }" class="relative">
-                        <button class="flex items-center gap-2 cursor-pointer w-full justify-between sm:w-auto px-6 py-2 sm:px-4 rounded-md   font-semibold text-sky-500 text-center hover:bg-sky-500 hover:text-white group
+                        <button class="flex items-center gap-1 cursor-pointer w-full justify-between sm:w-auto px-6 py-2 sm:px-4 rounded-md   font-semibold text-sky-500 text-center hover:bg-sky-500 hover:text-white group
                         @if(Request::segment(1) == 'tentang-kami') bg-sky-500 text-white @endif"
                             x-on:click="open = ! open"
                         >
@@ -71,7 +71,7 @@
                     <li x-data="{ open: false }"
                         class="relative"
                     >
-                        <button class="flex items-center gap-2 cursor-pointer w-full justify-between sm:w-auto px-6 py-2 sm:px-4 rounded-md    font-semibold text-sky-500 text-center hover:bg-sky-500 hover:text-white group
+                        <button class="flex items-center gap-1 cursor-pointer w-full justify-between sm:w-auto px-6 py-2 sm:px-4 rounded-md    font-semibold text-sky-500 text-center hover:bg-sky-500 hover:text-white group
                         @if(Request::segment(1) == 'layanan') bg-sky-500 text-white @endif"
                             x-on:click="open = ! open"
                         >
@@ -110,12 +110,35 @@
                             DOKTER
                         </a>
                     </li>
-                    <li class="w-full sm:w-auto px-6 py-2 sm:px-4 rounded-md font-semibold text-sky-500 text-center hover:bg-sky-500 hover:text-white
-
-                    ">
-                        <a href="">
+                    <li x-data="{ open: false }"
+                        class="relative"
+                    >
+                        <button class="flex items-center gap-1 cursor-pointer w-full justify-between sm:w-auto px-6 py-2 sm:px-4 rounded-md    font-semibold text-sky-500 text-center hover:bg-sky-500 hover:text-white group
+                        @if(Request::segment(1) == 'informasi') bg-sky-500 text-white @endif"
+                                x-on:click="open = ! open"
+                        >
                             INFORMASI
-                        </a>
+                            <svg class="w-3 h-3 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+                            </svg>
+                        </button>
+                        <div
+                            class="z-10 hidden w-48 bg-white devide-y rounded-lg shadow absolute top-10"
+                            :class="{ 'hidden': ! open }"
+                        >
+                            <ul class="py-2 text-sm text-gray-600">
+                                <a href="{{ route('berita')  }}">
+                                    <li class="block text-gray-600 text-sky-500 font-semibold px-4 py-2 hover:bg-sky-500 hover:text-white">
+                                        BERITA
+                                    </li>
+                                </a>
+                                <a href="{{ route('galeri') }}">
+                                    <li class="block text-gray-600 text-sky-500 font-semibold px-4 py-2 hover:bg-sky-500 hover:text-white">
+                                        GALERI
+                                    </li>
+                                </a>
+                            </ul>
+                        </div>
                     </li>
                     <li class="w-full sm:w-auto px-6 py-2 sm:px-4 rounded-md font-semibold text-sky-500 text-center hover:bg-sky-500 hover:text-white">
                         <a href="">

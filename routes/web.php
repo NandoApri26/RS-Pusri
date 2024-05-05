@@ -6,6 +6,7 @@ use App\Http\Controllers\landingpageController;
 use App\Http\Controllers\tentangkamiController;
 use App\Http\Controllers\dokterController;
 use App\Http\Controllers\layananController;
+use App\Http\Controllers\informasiController;
 
 /*
 |--------------------------------------------------------------------------
@@ -40,3 +41,10 @@ Route::prefix('/layanan')->group(function () {
 // Doketer
 Route::get('/dokter', [dokterController::class, 'index'])->name('dokter');
 Route::get('/detail-dokter', [dokterController::class, 'detail'])->name('detail-dokter');
+
+// Informasi
+Route::prefix('/informasi')->group(function () {
+    Route::get('/berita', [informasiController::class, 'berita'])->name('berita');
+    Route::get('/detail-berita', [informasiController::class, 'detailBerita'])->name('detail-berita');
+    Route::get('/galeri', [informasiController::class, 'galeri'])->name('galeri');
+});

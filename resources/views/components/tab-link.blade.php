@@ -2,6 +2,7 @@
     [
         'pathName' => Null,
         'link' => Null,
+        'linkClass' => ''
     ]
 )
 <div
@@ -11,6 +12,6 @@
             ]
     ) }}
 >
-    <a href="{{ $link }}" class="px-6 py-2 text-lg text-gray-600 font-semibold bg-sky-500 text-white rounded-md">{{ $pathName }}</a>
+    <a href="{{ $link }}" class="px-6 py-2 text-lg text-gray-600 font-semibold bg-sky-500 text-white rounded-md {{ $linkClass }}">{{ $pathName }}</a>
     {{ $slot }}
 </div>

@@ -13,7 +13,9 @@
         <!-- Profile -->
         <div class="bg-white py-8 px-10 xl:py-10 xl:pb-24 rounded-xl" id="profile">
             <div class="flex justify-center">
-                <h1 class="text-2xl text-gray-900 font-bold pb-1 border-b-4 border-sky-600">PROFIL</h1>
+                <x-tittle
+                    title="PROFILE"
+                />
             </div>
             <div class="flex flex-wrap pt-10 gap-5 lg:flex lg:flex-nowrap">
                 <div class="flex flex-wrap gap-5 justify-center md:flex md:flex-nowrap">
@@ -50,7 +52,9 @@
         <!-- Visi Misi -->
         <div class="pt-10 space-y-10" id="visi-misi">
             <div class="flex justify-center">
-                <h1 class="text-2xl text-gray-900 font-bold pb-1 border-b-4 border-sky-600">VISI MISI</h1>
+                <x-tittle
+                    title="VISI MISI"
+                />
             </div>
 
             <div class="flex flex-wrap gap-10 md:flex md:flex-nowrap md:gap-6 xl:gap-12">
@@ -82,7 +86,9 @@
         <!-- TATA NILAI (VALUES) -->
         <div class="pt-10 space-y-10">
             <div class="flex justify-center">
-                <h1 class="text-2xl text-gray-900 font-bold pb-1 border-b-4 border-sky-600">TATA NILAI (VALUES)</h1>
+                <x-tittle
+                    title="TATA NILAI (VALUES)"
+                />
             </div>
             <div class="flex justify-center">
                 <h1 class="text-lg font-semibold text-gray-600">Rumah Sakit Pusri menjunjung tinggi <span class="font-bold">FIRST</span> dalam memberikan pelayanan yang terbaik kepada masyarakat :</h1>
@@ -149,7 +155,9 @@
         <!-- PEMEGANG SAHAM -->
         <div id="pemegang-saham" class="py-10 space-y-10">
             <div class="flex justify-center">
-                <h1 class="text-2xl text-gray-900 font-bold pb-1 border-b-4 border-sky-600">PEMEGANG SAHAM</h1>
+                <x-tittle
+                    title="PEMEGANG SAHAM"
+                />
             </div>
             <div class="flex justify-center">
                 <div class="w-[210px] bg-white shadow-lg rounded-lg">
@@ -186,7 +194,9 @@
         <!-- STRUKTUR ORGANISASI -->
         <div id="struktur" class="pt-10 pb-32 space-y-10 bg-white rounded-xl cursor-pointer">
             <div class="flex justify-center">
-                <h1 class="text-2xl text-gray-600 font-bold pb-1 border-b-4 border-sky-600">STRUKTUR ORGANISASI</h1>
+                <x-tittle
+                    title="STRUKTUR ORGANISASI"
+                />
             </div>
             <div class="px-10">
                 <x-tab>
@@ -199,6 +209,7 @@
                         </svg>
                     </x-tab-link>
                     <x-tab-link
+                        linkClass="!bg-white !text-gray-600 hover:!bg-sky-500 hover:!text-white"
                         pathName="DIREKSI"
                     />
                 </x-tab>

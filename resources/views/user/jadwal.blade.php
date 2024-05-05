@@ -27,6 +27,7 @@
             <x-tab-link
                 pathName="Jantung"
                 link="#penyakitDalam"
+                linkClass="!bg-transparent !text-gray-600 hover:!bg-sky-500 hover:!text-white"
             >
                 <svg width="3" height="20" viewBox="0 0 2 14" fill="none">
                     <path d="M1 12.8333V1.16667" stroke="#4B5563" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -35,6 +36,7 @@
             <x-tab-link
                 pathName="Anak"
                 link="#penyakitDalam"
+                linkClass="!bg-transparent !text-gray-600 hover:!bg-sky-500 hover:!text-white"
             />
         </x-tab>
     </div>

@@ -15,7 +15,9 @@
         {{-- Pelayanan --}}
         <div class="bg-white shadow-xl py-8 px-4 xl:py-10 rounded-xl">
             <div class="flex justify-center">
-                <h1 class="text-xl text-gray-900 font-bold pb-1 border-b border-sky-600">PELAYANAN</h1>
+                <x-tittle
+                    title="PELAYANAN"
+                />
             </div>
             <div class="flex flex-wrap gap-5 lg:space-y-8 mt-10 justify-center">
                 <div class="flex w-full lg:w-1/2 justify-center">
@@ -96,23 +98,26 @@
         {{-- Berita --}}
         <div class="pt-10 space-y-10">
             <div class="flex justify-center">
-                <h1 class="text-xl text-gray-900 font-bold pb-1 border-b border-sky-600">BERITA</h1>
+                <x-tittle
+                    title="BERITA"
+                />
             </div>
             <div class="w-full overflow-x-auto mt-10 pb-8 2xl:justify-center flex">
                 <div class="w-[1760px] flex gap-6">
-                    @for ($i = 0; $i < 6; $i++)
+                    @for ($i = 0; $i < 4; $i++)
                         <x-card
                             imgFile="{{ asset('assets/Hemodialisis.jpg') }}"
                             class="w-96"
                             name="PEMERIKSAAN USG DAN KONSULTASI GRATIS BULAN JUNI"
                             date="29 Maret 2024"
                             unitSold="Layanan Hemodialisis ini dapat membantu bagi yang mengalami Gagal Ginjal dan memerlukan tindakan cuci darah secara periodik. Ditangani oleh dokter spesialis Ginjal dan tenaga paramedis yang ahli di bidangnya."
+                            button="Lihat Selengkapnya"
                         />
                     @endfor
                 </div>
             </div>
             <div class="mt-10 flex justify-center">
-                <a href="" class="bg-blue-600 text-white font-semibold px-10 py-2 rounded-full cursor-pointer hover:bg-blue-500">Lihat Selengkapnya</a>
+                <a href="" class="bg-sky-500 text-white font-semibold px-10 py-2 rounded-full cursor-pointer hover:bg-sky-600">Lihat Selengkapnya</a>
             </div>
         </div>
     </div>

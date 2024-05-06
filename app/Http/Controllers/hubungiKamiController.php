@@ -4,9 +4,9 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class kontakController extends Controller
+class hubungiKamiController extends Controller
 {
-    public function index()
+    public function kontak()
     {
         return view('user.kontak');
     }

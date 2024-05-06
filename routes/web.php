@@ -7,7 +7,7 @@ use App\Http\Controllers\tentangkamiController;
 use App\Http\Controllers\dokterController;
 use App\Http\Controllers\layananController;
 use App\Http\Controllers\informasiController;
-use App\Http\Controllers\kontakController;
+use App\Http\Controllers\hubungiKamiController;
 
 /*
 |--------------------------------------------------------------------------
@@ -51,7 +51,7 @@ Route::prefix('/informasi')->group(function () {
 });
 
 // Kontak
-Route::prefix('/kontak')->group(function () {
-    Route::get('', [kontakController::class, 'index'])->name('kontak');
+Route::prefix('/hubungi-kami')->group(function () {
+    Route::get('', [hubungiKamiController::class, 'kontak'])->name('kontak');
 });
 

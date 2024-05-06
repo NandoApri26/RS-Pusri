@@ -24,11 +24,11 @@
         </div>
         <div class="space-y-10">
             <div class="space-y-4">
-                <h1 class="text-sky-600 text-5xl">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, suscipit!</h1>
+                <h1 class="text-sky-600 text-4xl">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, suscipit!</h1>
                 <h2 class="text-gray-600 text-xl">30 April 2024</h2>
             </div>
             <div class="w-full">
-                <img src="{{ asset('assets/ruangan/kelas2.png') }}" alt="" class="w-full rounded-lg">
+                <img src="{{ asset('assets/ruangan/kelas2.png') }}" alt="" class="w-full rounded-lg bg-cover bg-center">
             </div>
             <div class="">
                 <article class="text-gray-600 text-xl text-justify">

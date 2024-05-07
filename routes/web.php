@@ -52,6 +52,6 @@ Route::prefix('/informasi')->group(function () {
 
 // Kontak
 Route::prefix('/hubungi-kami')->group(function () {
-    Route::get('', [hubungiKamiController::class, 'kontak'])->name('kontak');
+    Route::get('/kontak', [hubungiKamiController::class, 'kontak'])->name('kontak');
 });
 

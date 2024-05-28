@@ -36,6 +36,7 @@ Route::prefix('/layanan')->group(function () {
     Route::get('/jadwal', [layananController::class, 'jadwal'])->name('jadwal');
     Route::get('/rawat-jalan', [layananController::class, 'rawatJalan'])->name('rawat-jalan');
     Route::get('/rawat-inap', [layananController::class, 'rawatInap'])->name('rawat-inap');
+    Route::get('/tipe-ruangan', [layananController::class, 'tipeRuangan'])->name('tipe-ruangan');
     Route::get('/detail-ruangan', [layananController::class, 'detailRuangan'])->name('detail-ruangan');
 });
 

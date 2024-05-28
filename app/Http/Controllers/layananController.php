@@ -24,6 +24,12 @@ class layananController extends Controller
         return view('user.rawat-inap');
     }
 
+    // Fungsi tipe ruangan
+    public function tipeRuangan()
+    {
+        return view('user.tipe-ruangan');
+    }
+
     // Fungsi Detail Ruangan
     public function detailRuangan()
     {

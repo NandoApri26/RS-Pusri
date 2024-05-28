@@ -4,7 +4,7 @@
 
 @section('content')
 
-    <div class="px-8 pt-24 space-y-10 sm:px-14 sm:pt-40 lg:pt-28 lg:px-28">
+    <div class="px-8 pt-24 space-y-10 sm:px-14 sm:pt-40 lg:pt-28 lg:px-28 xl:pt-40 animate-fade animate-duration-1000 animate-delay-150">
         {{-- bread-crumb --}}
         <x-bread-crumb>
             <x-bread-crumb-link pathName="Tentang Kami" />
@@ -17,7 +17,7 @@
                     title="PROFILE"
                 />
             </div>
-            <div class="flex flex-wrap pt-10 gap-5 lg:flex lg:flex-nowrap">
+            <div class="flex flex-wrap pt-10 gap-5 lg:flex lg:flex-nowrap animate-jump-in animate-duration-1000 animate-delay-200">
                 <div class="flex flex-wrap gap-5 justify-center md:flex md:flex-nowrap">
                     <div class="w-full md:w-1/2 bg-sky-300 text-gray-600 shadow-[0px_0px_8px_0px_#00000024] p-8 rounded-xl">
                         <h1 class="flex justify-center text-4xl font-bold">1963</h1>
@@ -58,7 +58,7 @@
             </div>
 
             <div class="flex flex-wrap gap-10 md:flex md:flex-nowrap md:gap-6 xl:gap-12">
-                <div class="w-full py-4 lg:w-1/2 bg-white rounded-xl shadow-md">
+                <div class="w-full py-4 lg:w-1/2 bg-white rounded-xl shadow-md animate-fade-right">
                     <div class="px-20 rounded-xl md:px-14">
                         <h1 class="flex border-b-4 border-sky-600 py-4 items-center justify-center font-bold text-xl text-gray-900">VISI</h1>
                         <h2 class="flex h-96 md:h-[353px] font-semibold text-gray-600 text-lg items-center justify-center">
@@ -66,7 +66,7 @@
                         </h2>
                     </div>
                 </div>
-                <div class="w-full py-4 lg:w-1/2 bg-white rounded-xl shadow-md">
+                <div class="w-full py-4 lg:w-1/2 bg-white rounded-xl shadow-md animate-fade-left">
                     <div class="px-20 rounded-xl md:px-14">
                         <h1 class="flex border-b-4 border-sky-600 py-4 items-center justify-center font-bold text-xl text-gray-900">MISI</h1>
                         <div class="flex my-10 xl:h-96 font-semibold text-gray-600 text-lg items-center justify-center">
@@ -84,7 +84,7 @@
         </div>
 
         <!-- TATA NILAI (VALUES) -->
-        <div class="pt-10 space-y-10">
+        <div class="pt-10 space-y-10 animate-jump">
             <div class="flex justify-center">
                 <x-tittle
                     title="TATA NILAI (VALUES)"
@@ -153,7 +153,7 @@
         </div>
 
         <!-- PEMEGANG SAHAM -->
-        <div id="pemegang-saham" class="py-10 space-y-10">
+        <div id="pemegang-saham" class="py-10 space-y-10 animate-jump">
             <div class="flex justify-center">
                 <x-tittle
                     title="PEMEGANG SAHAM"
@@ -192,7 +192,7 @@
         </div>
 
         <!-- STRUKTUR ORGANISASI -->
-        <div id="struktur" class="pt-10 pb-32 space-y-10 bg-white rounded-xl cursor-pointer">
+        <div id="struktur" class="pt-10 pb-32 space-y-10 bg-white rounded-xl cursor-pointer animate-jump-in">
             <div class="flex justify-center">
                 <x-tittle
                     title="STRUKTUR ORGANISASI"

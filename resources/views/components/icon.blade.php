@@ -2,10 +2,10 @@
     'name' => ''
 ])
 
-<div class="flex items-center gap-4">
+<div class="flex flex-1 gap-2 items-center">
     {{ $slot }}
     <div {{ $attributes->merge([
-        'class' => 'text-base font-medium text-gray-600'
+        'class' => 'text-gray-500'
         ]) }}
     >
         {{ $name }}

@@ -1,8 +1,8 @@
 <nav class="w-full fixed bg-white shadow-[0px_2px_2px_0px_#00000024] z-50">
-    <div class="px-8 lg:h-20 py-4 gap-4 flex flex-col lg:flex-row items-center justify-between sm:justify-center md:mx-12 xl:mx-20 2xl:mx-80 lg:justify-between "
+    <div class="px-8 py-4 gap-4 flex flex-col items-center justify-between sm:justify-center lg:justify-between xl:h-32 2xl:mx-20 2xl:flex-row 2xl:h-20"
         x-data="{ open: false }"
     >
-        <div class="flex w-full lg:w-auto justify-between sm:justify-center">
+        <div class="flex w-full justify-between items-center xl:justify-center 2xl:w-auto">
             <div class="">
                 <a href="{{ route ('beranda') }}">
                     <img src="{{ asset('/assets/logo.png') }}" alt="Logo RS Pusri" class="w-64 sm:w-80">
@@ -11,7 +11,7 @@
             <div class="">
                 <button
                     x-on:click="open = ! open"
-                    class="focus:none focus:ring-2 focus:ring-gray-300 rounded-lg sm:hidden"
+                    class="focus:none focus:ring-2 focus:ring-gray-300 rounded-lg xl:hidden"
                 >
                     <span class="sr-only">Open main menu</span>
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
@@ -20,10 +20,10 @@
                 </button>
             </div>
         </div>
-        <div class="hidden sm:block mx-auto lg:mx-0" :class="{ 'hidden': ! open }">
+        <div class="hidden mx-auto lg:mx-0 xl:block" :class="{ 'hidden': ! open }">
             <div class="w-full xl:w-auto">
-                <ul class="flex flex-col sm:flex-row items-center w-full justify-center gap-2 py-8 sm:py-0">
-                    <li class="w-full sm:w-auto px-6 py-2 sm:px-4 rounded-md text-center font-semibold text-sky-500 hover:bg-sky-500 hover:text-white
+                <ul class="flex flex-col items-center w-full justify-center gap-2 xl:flex-row">
+                    <li class="w-full px-6 py-2 rounded-md text-center font-semibold text-sky-500 xl:w-auto hover:bg-sky-500 hover:text-white
                         @if(Request::segment(1) == '') bg-sky-500 text-white @endif"
                     >
                         <a href="{{ route('beranda') }}" class="">
@@ -31,7 +31,7 @@
                         </a>
                     </li>
                     <li x-data="{ open: false }" class="relative">
-                        <button class="flex items-center gap-1 cursor-pointer w-full justify-between sm:w-auto px-6 py-2 sm:px-4 rounded-md   font-semibold text-sky-500 text-center hover:bg-sky-500 hover:text-white group
+                        <button class="flex items-center gap-1 cursor-pointer w-full justify-between px-6 py-2 rounded-md font-semibold text-sky-500 text-center hover:bg-sky-500 hover:text-white group xl:w-auto
                         @if(Request::segment(1) == 'tentang-kami') bg-sky-500 text-white @endif"
                             x-on:click="open = ! open"
                         >
@@ -50,17 +50,17 @@
                                         PROFILE
                                     </li>
                                 </a>
-                                <a href="#visi-misi">
+                                <a href="{{ route('tentang-kami') }}/#visi-misi">
                                     <li class="block text-gray-600 text-sky-500 font-semibold px-4 py-2 hover:bg-sky-500 hover:text-white">
                                         VISI MISI
                                     </li>
                                 </a>
-                                <a href="#pemegang-saham">
+                                <a href="{{ route('tentang-kami') }}/#pemegang-saham">
                                     <li class="block text-gray-600 text-sky-500 font-semibold px-4 py-2 hover:bg-sky-500 hover:text-white">
                                         PEMEGANG SAHAM
                                     </li>
                                 </a>
-                                <a href="#struktur">
+                                <a href="{{ route('tentang-kami') }}/#struktur">
                                     <li class="block text-gray-600 text-sky-500 font-semibold px-4 py-2 hover:bg-sky-500 hover:text-white">
                                         STRUKTUR
                                     </li>
@@ -68,10 +68,8 @@
                             </ul>
                         </div>
                     </li>
-                    <li x-data="{ open: false }"
-                        class="relative"
-                    >
-                        <button class="flex items-center gap-1 cursor-pointer w-full justify-between sm:w-auto px-6 py-2 sm:px-4 rounded-md    font-semibold text-sky-500 text-center hover:bg-sky-500 hover:text-white group
+                    <li x-data="{ open: false }" class="relative">
+                        <button class="flex items-center gap-1 cursor-pointer w-full justify-between ite px-6 py-2 rounded-md font-semibold text-sky-500 text-center hover:bg-sky-500 hover:text-white group xl:w-auto
                         @if(Request::segment(1) == 'layanan') bg-sky-500 text-white @endif"
                             x-on:click="open = ! open"
                         >

@@ -3,7 +3,7 @@
 @section('title', 'Rawat Jalan')
 
 @section('content')
-    <div class="px-8 pt-24 space-y-10 sm:px-14 sm:pt-40 lg:pt-28 lg:px-28">
+    <div class="px-8 pt-24 space-y-10 sm:px-14 sm:pt-40 lg:pt-28 lg:px-28 xl:pt-40 animate-fade animate-duration-1000 animate-delay-150">
         {{-- bread-crumb --}}
         <x-bread-crumb>
             <x-bread-crumb-link pathName="Pelayanan Rawat Jalan" />
@@ -62,14 +62,14 @@
         </div>
         <div class="pt-10 space-y-10">
             <div class="flex gap-20 items-center">
-                <div class="mx-8 space-y-4">
+                <div class="mx-8 space-y-4 animate-fade-right">
                     <x-tittle
                         divStyle="!justify-start"
                         title="PELAYANAN UNGGULAN"
                     />
-                    <p class="text-xl text-gray-600">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam aspernatur, dicta doloribus iusto nisi nobis porro sequi sint vitae? Tempore.</p>
+                    <p class="text-gray-600">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam aspernatur, dicta doloribus iusto nisi nobis porro sequi sint vitae? Tempore.</p>
                 </div>
-                <div class="flex gap-10">
+                <div class="flex gap-10 animate-fade-left">
                     <x-card
                         class="cursor-pointer w-[350px]"
                         imgFile="{{ asset('assets/Hemodialisis.jpg') }}"
@@ -86,7 +86,7 @@
             </div>
         </div>
         <div class="flex pt-10 gap-10">
-            <div class="flex-1 p-10 bg-white shadow rounded-xl">
+            <div class="flex-1 p-10 bg-white shadow rounded-xl animate-fade-right">
                 <div class="space-y-10 items-center">
                     <div class="">
                         <x-tittle
@@ -115,7 +115,7 @@
                     </div>
                 </div>
             </div>
-            <div class="flex-1 p-10 bg-white shadow rounded-xl">
+            <div class="flex-1 p-10 bg-white shadow rounded-xl animate-fade-left">
                 <div class="space-y-10 items-center">
                     <div class="">
                         <x-tittle

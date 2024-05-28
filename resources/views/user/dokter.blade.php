@@ -3,7 +3,7 @@
 @section('title', 'Dokter')
 
 @section('content')
-    <div class="px-8 pt-24 space-y-10 sm:px-14 sm:pt-40 lg:pt-28 lg:px-28">
+    <div class="px-8 pt-24 space-y-10 sm:px-14 sm:pt-40 lg:pt-28 lg:px-28 xl:pt-40">
         {{-- bread-crumb --}}
         <x-bread-crumb>
             <x-bread-crumb-link pathName="Dokter" />
@@ -16,7 +16,7 @@
         </div>
     </div>
 
-    <div class="px-8 pt-24 space-y-20 sm:px-14 sm:pt-40 lg:pt-28 lg:px-28">
+    <div class="px-8 pt-24 space-y-20 sm:px-14 sm:pt-40 lg:pt-20">
         <div class="flex gap-10">
             <!-- Dokter -->
             <x-card
@@ -25,7 +25,7 @@
                 name="dr. Masdianto, SpPD"
                 title="Spesialis Penyakit Dalam"
                 button="Lihat Detail"
-                linkButton="{{ route('detail-dokter') }}"
+                href="{{ route('detail-dokter') }}"
             />
             <x-card
                 class="w-full"
@@ -33,7 +33,7 @@
                 name="dr. Junaidi, SpPD"
                 title="Spesialis Penyakit Dalam"
                 button="Lihat Detail"
-                linkButton="{{ route('detail-dokter') }}"
+                href="{{ route('detail-dokter') }}"
             />
             <x-card
                 class="w-full"
@@ -41,7 +41,7 @@
                 name="dr. Edrian Z, SpJP"
                 title="Spesialis Jantung dan Pembuluh Darah"
                 button="Lihat Detail"
-                linkButton="{{ route('detail-dokter') }}"
+                href="{{ route('detail-dokter') }}"
             />
         </div>
     </div>

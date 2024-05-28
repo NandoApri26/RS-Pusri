@@ -5,7 +5,7 @@
 @section('content')
 
     <!-- Breadcrumb -->
-    <div class="px-8 pt-24 space-y-10 sm:px-14 sm:pt-40 lg:pt-28 lg:px-28">
+    <div class="px-8 pt-24 space-y-10 sm:px-14 sm:pt-40 lg:pt-28 lg:px-28 xl:pt-40 animate-fade animate-duration-1000 animate-delay-150">
         <x-bread-crumb>
             <x-bread-crumb-link
                 pathName="Jadwal"
@@ -14,11 +14,12 @@
     </div>
 
     <!-- Tab -->
-    <div class="px-8 pt-24 space-y-10 sm:px-14 sm:pt-40 lg:pt-20 lg:px-28">
-        <x-tab class="pb-0">
+    <div class="px-8 pt-20">
+        <x-tab class="!pb-0">
             <x-tab-link
                 pathName="Penyakit Dalam"
                 link="#penyakitDalam"
+                class="!pb-10"
             >
                 <svg width="3" height="20" viewBox="0 0 2 14" fill="none">
                     <path d="M1 12.8333V1.16667" stroke="#4B5563" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -28,6 +29,7 @@
                 pathName="Jantung"
                 link="#penyakitDalam"
                 linkClass="!bg-transparent !text-gray-600 hover:!bg-sky-500 hover:!text-white"
+                class="!pb-10"
             >
                 <svg width="3" height="20" viewBox="0 0 2 14" fill="none">
                     <path d="M1 12.8333V1.16667" stroke="#4B5563" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -37,12 +39,13 @@
                 pathName="Anak"
                 link="#penyakitDalam"
                 linkClass="!bg-transparent !text-gray-600 hover:!bg-sky-500 hover:!text-white"
+                class="!pb-10"
             />
         </x-tab>
     </div>
 
     <!-- Table -->
-    <div class="px-8 pt-24 space-y-10 sm:px-14 sm:pt-40 lg:pt-0 lg:px-28">
+    <div class="px-8">
         <div class="relative overflow-x-auto rounded-xl">
             <x-table.table tableClass="w-full text-left">
                 <x-table.header>
